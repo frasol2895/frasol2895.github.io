@@ -31,17 +31,17 @@
 
         <section id="projects">
             <h2>My Projects</h2>
-            
-            <!-- TABLE STARTS HERE - This is exactly what the assignment asked for -->
+           
+            <!-- TABLE STARTS HERE -->
             <table>
                 <caption>Showcase of Recent Projects</caption>
-                
+               
                 <colgroup>
                     <col class="col-image">
                     <col class="col-description">
                     <col class="col-tech">
                 </colgroup>
-                
+               
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -49,7 +49,7 @@
                         <th>Technologies</th>
                     </tr>
                 </thead>
-                
+               
                 <tbody>
                     <tr>
                         <td><img src="https://via.placeholder.com/300x180?text=Project+1" alt="Task Manager App"></td>
@@ -62,7 +62,7 @@
                         <td>HTML5 • CSS3 • JavaScript • API</td>
                     </tr>
                 </tbody>
-                
+               
                 <tfoot>
                     <tr>
                         <td colspan="3">More projects coming soon...</td>
@@ -71,9 +71,28 @@
             </table>
         </section>
 
+        <!-- UPDATED CONTACT SECTION WITH FORM -->
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: hello@frankportfolio.com</p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out! I'll get back to you soon.</p>
+
+                <form id="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
